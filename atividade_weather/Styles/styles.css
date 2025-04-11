@@ -17,8 +17,8 @@ body {
 }
 
 .container {
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 500px;
 
   display: flex;
   justify-content: center;
@@ -26,31 +26,124 @@ body {
   flex-direction: column;
 
   border-radius: 25px;
-  box-shadow: 5px 5px 5px 5px black;
 
-  padding-top: 10px;
+  box-shadow: 5px 5px 20px black;
+  background-color: rgba(0, 0, 0 0.7);
+
+  padding: 10px 5px 5px 5px;
+
+  backdrop-filter: blur(5px);
 }
 
 .container .div_form #form {
-  box-shadow: 5px 5px 5px 5px black;
-  border-radius: 10px;
+  width: 300px;
+  height: 50px;
+  box-shadow: 5px 5px 20px black;
+  border-radius: 4px;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin-bottom: 15px;
 }
 
 .container .div_form #form input {
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+
   border: none;
   background-color: transparent;
+
+  margin-left: 20px;
+  margin-right: 30px;
+
+  outline: none;
 }
 
 .container .temperatura {
-  height: 100px;
-  width: 100px;
-  background-color: red;
+  height: 45%;
+  width: 80%;
 
-  display: flex;
+  box-shadow: 5px 5px 20px black;
+  border-radius: 7px;
+
+  /* display: flex;
   justify-content: center;
+  align-items: center; */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.container .temperatura .imagem {
+  background-image: url(/images/images.jfif);
+  border-radius: 7px;
+}
+
+.container .temperatura .temp {
+  display: grid;
   align-items: center;
+  justify-content: center;
+}
+
+.container .temperatura .temp p:nth-child(1) {
+  font-size: 40px;
+}
+
+.container .temperatura .temp p:nth-child(2) {
+  font-size: 25px;
+}
+
+.informacoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.informacoes div {
+  width: 165px;
+  height: 70px;
+
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px black;
+
+  margin: 10px;
+
+  font-size: 10px;
+}
+
+.container .informacoes div {
+  display: flex;
+  align-items: center;
+}
+
+.container .informacoes div i {
+  font-size: 50px;
+
+  margin: 3px;
+}
+
+.container .informacoes div p {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.informacoes .temp_max i {
+  color: rgb(169, 30, 30);
+}
+
+.informacoes .temp_min i {
+  color: rgb(39, 39, 156);
+}
+
+.informacoes .umidade i {
+  color: rgb(30, 177, 177);
+}
+
+.informacoes .vento i {
+  color: rgb(100, 44, 152);
 }
