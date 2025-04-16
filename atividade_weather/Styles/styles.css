@@ -7,7 +7,7 @@
 
 body {
   height: 100vh;
-  background-image: url(/atividade_weather/images/e6497ce430412cf2df0e9945fe58a799.jpg);
+  background-image: url(/atividade_weather/images/Fundo\ do\ céu\ à\ noite_\ _\ Foto\ Grátis.jfif);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -17,8 +17,8 @@ body {
 }
 
 .container {
-  width: 450px;
-  height: 500px;
+  width: auto;
+  height: auto;
 
   display: flex;
   justify-content: center;
@@ -62,6 +62,11 @@ body {
   outline: none;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+}
+
 .container .temperatura {
   height: 45%;
   width: 80%;
@@ -81,8 +86,9 @@ body {
 }
 
 .container .temperatura .imagem {
-  background-image: url(/images/images.jfif);
-  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container .temperatura .temp {
@@ -146,4 +152,52 @@ body {
 
 .informacoes .vento i {
   color: rgb(100, 44, 152);
+}
+
+#h1 {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+
+  transition: all 0.5s ease-in-out;
+}
+
+#h1.visible {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  overflow: visible;
+}
+
+.temperatura {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+
+  transition: height 0.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+
+.temperatura.visible {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  overflow: visible;
+}
+
+.informacoes {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+
+  transition: height 0.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+
+.informacoes.visible {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  overflow: visible;
 }

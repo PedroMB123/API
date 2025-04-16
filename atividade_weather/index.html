@@ -21,44 +21,48 @@
         <form id="form">
           <i class="fa-solid fa-location-dot"></i>
           <input type="text" id="input" nome="nome" placeholder="Cidade" />
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </form>
       </div>
-      <h1>NOME DA CIDADE</h1>
+      <h1 id="h1">NOME DA CIDADE</h1>
       <div class="temperatura">
-        <div class="imagem"></div>
+        <div class="imagem">
+          <img src="" id="image" alt="" />
+        </div>
         <div class="temp">
-          <p>32 <sup>°C</sup></p>
-          <p>Ensolarado</p>
+          <p id="temp_principal">Temp</p>
+          <p id="clima">Clima</p>
         </div>
       </div>
       <div class="informacoes">
         <div class="temp_max">
           <i class="fa-solid fa-temperature-high"> </i>
-          <p>
+          <p id="text_temp_max">
             Temp max <br />
-            32<sup>°C</sup>
+            <!-- 32<sup>°C</sup> -->
           </p>
         </div>
         <div class="temp_min">
           <i class="fa-solid fa-temperature-low"> </i>
-          <p>
+          <p id="text_temp_min">
             Temp min <br />
-            15<sup>°C</sup>
+            <!-- 15<sup>°C</sup> -->
           </p>
         </div>
         <div class="umidade">
           <i class="fa-solid fa-droplet"> </i>
-          <p>
+          <p id="text_umidade">
             Umidade <br />
-            60
+            <!-- 60 -->
           </p>
         </div>
         <div class="vento">
           <i class="fa-solid fa-wind"> </i>
-          <p>
+          <p id="text_vento">
             Vento <br />
-            6.1Km/h
+            <!-- 6.1Km/h -->
           </p>
         </div>
       </div>
